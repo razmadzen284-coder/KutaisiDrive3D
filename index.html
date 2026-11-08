@@ -9,4 +9,4 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>
 const map=L.map('map').setView([42.2679,42.7180],13);L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles © Esri'}).addTo(map);
 document.querySelectorAll('[data-route]').forEach(btn=>btn.onclick=()=>{document.querySelectorAll('[data-route]').forEach(b=>b.classList.toggle('active',b===btn));document.querySelector('#heading').textContent='მარშრუტი №'+btn.dataset.route;map.setView([42.2679,42.7180],13)});
-</script></body></html>
+</script><section style="padding:15px;background:#122b40"><h2>🚗 ავტომატური სასწავლო მოძრაობა — 4 სცენარი</h2><p>ეს ანიმაცია არის სავარჯიშო და არ წარმოადგენს ქუთაისის ოფიციალური მარშრუტების ვიდეოს ან ზუსტ GPS მოძრაობას.</p><iframe src="./driving.html" title="ოთხი სასწავლო მოძრაობის სცენარი" style="width:100%;height:690px;border:1px solid #416d85;border-radius:12px;background:#081523" loading="lazy"></iframe><p><a href="./driving.html">გახსენი მოძრაობა ცალკე სრულ ეკრანზე</a></p></section></body></html>
